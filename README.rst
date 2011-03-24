@@ -27,13 +27,14 @@ $ apt-get install libmysqlclient-dev mysql-server
 * create the db
     $ ./bin/django syncdb
 
-
 * import the data fixtures
     $ ./bin/django loaddata musicfocus
     $ ./bin/django loaddata broadcastformats
     $ ./bin/django loaddata rrules
     $ ./bin/django loaddata showinformation
     $ ./bin/django loaddata showtopics
+    $ ./bin/django loaddata hosts
+    $ ./bin/django loaddata shows
 
 
 * run the server
