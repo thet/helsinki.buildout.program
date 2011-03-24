@@ -1,6 +1,11 @@
 howto install
 =============
 
+debian dependencies
+-------------------
+$ apt-get install libmysqlclient-dev mysql-server
+
+
 * checkout the repository
 
   readwrite: $ git@github.com:thet/helsinki.buildout.program.git
