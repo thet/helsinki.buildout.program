@@ -3,8 +3,15 @@ howto install
 
 debian dependencies
 -------------------
+
 $ apt-get install libmysqlclient-dev mysql-server
 
+* prepare MYSQL database for development
+  $ mysql -uroot -p
+  mysql> CREATE DATABASE helsinki;
+  mysql> CREATE DATABASE helsinki2;
+  mysql> CREATE USER helsinki@localhost IDENTIFIED BY helsinki;
+  mysql> GRANT ALL PRIVILEGES ON helsinki.* TO helsinki@localhost;
 
 * checkout the repository
 
