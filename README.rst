@@ -17,6 +17,7 @@ howto install
 * install the application
     $ python-2.6 bootrap.py -d -c base.cfg
 
+    $ ./bin/buildout -c base.cfg
 
 * create the db
     $ ./bin/django syncdb
