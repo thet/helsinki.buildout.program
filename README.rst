@@ -12,6 +12,8 @@ $ apt-get install libmysqlclient-dev mysql-server
   mysql> CREATE DATABASE helsinki2;
   mysql> CREATE USER helsinki@localhost IDENTIFIED BY helsinki;
   mysql> GRANT ALL PRIVILEGES ON helsinki.* TO helsinki@localhost;
+* import dump
+  $mysql -uroot -p helsinki < MYSQLDUMP_FROM_SOMEWHERE.sql
 
 * checkout the repository
 
