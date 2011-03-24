@@ -1,0 +1,3 @@
+[submodule "helsinki"]
+	path = helsinki
+	url = git@github.com:nnrcschmdt/helsinki.git
