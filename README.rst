@@ -6,6 +6,9 @@ debian dependencies
 
 $ apt-get install libmysqlclient-dev mysql-server
 
+database preparation
+--------------------
+
 * prepare MYSQL database for development
   $ mysql -uroot -p
   mysql> CREATE DATABASE helsinki;
@@ -15,12 +18,19 @@ $ apt-get install libmysqlclient-dev mysql-server
 * import dump
   $mysql -uroot -p helsinki < MYSQLDUMP_FROM_SOMEWHERE.sql
 
+
+checkout
+--------
+
 * checkout the repository
 
   readwrite: $ git@github.com:thet/helsinki.buildout.program.git
 
   readonly: $ git://github.com/thet/helsinki.buildout.program.git
 
+
+install
+-------
 
 * install the application
     $ python-2.6 bootrap.py -d
@@ -43,6 +53,9 @@ $ apt-get install libmysqlclient-dev mysql-server
 * run the server
     $ ./bin/django runserver 
 
+
+notes
+-----
 
 http://localhost:8000/program/
 
