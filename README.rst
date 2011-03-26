@@ -22,16 +22,10 @@ $ apt-get install libmysqlclient-dev mysql-server
   readonly: $ git://github.com/thet/helsinki.buildout.program.git
 
 
-* checkout the submodules
-    $ git submodule init
-
-    $ git submodule update
-
-
 * install the application
-    $ python-2.6 bootrap.py -d -c base.cfg
+    $ python-2.6 bootrap.py -d
 
-    $ ./bin/buildout -c base.cfg
+    $ ./bin/buildout
 
 * create the db
     $ ./bin/django syncdb
